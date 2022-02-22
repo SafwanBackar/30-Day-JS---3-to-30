@@ -49,7 +49,7 @@
 // }
 
 
-// Day 4 
+// Day 4
 
 // let a = prompt("Enter any number");
 // if (a % 2 === 0) {
@@ -74,13 +74,17 @@
 //     alert("Read the instruction")
 // }
 
-let value = prompt("Enter the current month");
-let a = value.toLowerCase();
-if (a === "monday" || a === "tuesday" || a === "wednesday" || a === "thursday" || a === "friday") {
-    alert(a + "is a working day")
-} else if (a === "saturday" || a === "sunday") {
-    alert(a + "is a weekend")
-}
-else {
-    alert("Read the instruction")
-}
+// let value = prompt("Enter the current month");
+// let a = value.toLowerCase();
+// if (a === "monday" || a === "tuesday" || a === "wednesday" || a === "thursday" || a === "friday") {
+//     alert(a + "is a working day")
+// } else if (a === "saturday" || a === "sunday") {
+//     alert(a + "is a weekend")
+// }
+// else {
+//     alert("Read the instruction")
+// }
+
+
+// Day 6
+
