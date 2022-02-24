@@ -59,3 +59,41 @@ function capitalizeArray(arr) {
     }
     console.log(a);
 }
+
+function addItem(item) {
+    const zoo = []
+    zoo.push(item)
+    console.log(zoo)
+}
+
+
+function sumOfNumbers() {
+    let sum = 0;
+    for (let i = 0; i < arguments.length; i++) {
+        sum += arguments[i]
+    }
+    console.log(sum)
+}
+
+function sumOfOddNumbers(number) {
+    let sum = 0;
+    for (let i = 0; i < number; i++) {
+        if (i % 2 === 1) {
+            sum += i
+        }
+    }
+    return sum
+}
+
+function randomUserIp() {
+    var ip = (Math.floor(Math.random() * 255) + 1) + "." + (Math.floor(Math.random() * 255)) + "." + (Math.floor(Math.random() * 255)) + "." + (Math.floor(Math.random() * 255));
+    console.log(ip)
+}
+
+function hexaGenerator() {
+    var it = '1234567890abcdef';
+    var hexvalue = ""
+    for (let i = 0; i < 6; i++) {
+        hexvalue += it.charAt(Math.round(Math.random() * 15))
+    }
+}
