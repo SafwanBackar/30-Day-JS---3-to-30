@@ -161,3 +161,43 @@ console.log(firstCountriesSix)
 const norway = countries.findIndex((country) =>
     country.toUpperCase().includes("norway"))
 console.log(norway)
+
+
+// Day 10
+// var empty = ()
+var r = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+var rw = new Set(r)
+console.log(rw)
+
+console.log(rw.delete(3))
+
+var breed = ["dober", "labor"]
+
+breedSet = new Set(breed)
+
+console.log(breedSet);
+
+// var a = [1, 2, 3]
+// var b = [5, 6]
+// var c = [...a, ...b]
+// c
+// console.log(new Set(c))
+
+// var a = [1, 2, 3]
+// var b = [5, 6]
+// var A = new Set(a)
+// var B = new Set(b)
+// var c = A.filter((num => B.has(num)))
+// var C = new Set(c)
+
+
+var a = [1, 2, 3, 4, 5, 6,]
+var b = [3, 4, 5, 6]
+
+var A = new Set(a)
+var B = new Set(b)
+var c = a.filter((num) => !B.has(num))
+console.log(new Set(c));
+
+const countries = ['Finland', 'Sweden', 'Norway']
