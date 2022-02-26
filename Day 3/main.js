@@ -28,8 +28,6 @@ function tempConverter(num1) {
 }
 // BMI
 function check(weight, height) {
-    // let weight = prompt("Enter your weight in Kg")
-    // let height = prompt("Enter your height in m")
     let bmi = weight / (height * height)
     let result = bmi
     if (result < 18.5) {
@@ -97,3 +95,69 @@ function hexaGenerator() {
         hexvalue += it.charAt(Math.round(Math.random() * 15))
     }
 }
+
+
+// Day 7 - Objects
+
+// let dog = { name: 'Rusty', legs: 4, color: 'black', bark: "woof woof" }
+// console.log(dog);
+
+// dog.breed = "Doberman"
+
+
+// Day 9
+
+const countries = ['Finland', 'Sweden', 'Denmark', 'Norway', 'IceLand']
+
+countries.forEach(country => console.log(country))
+
+var upper = countries.map(upper => upper.toUpperCase())
+
+console.log(upper)
+
+var countryLength = countries.map(length => length.length)
+console.log(countryLength)
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+var square = numbers.map(square => square * square)
+console.log(square);
+
+const products = [
+    { product: 'banana', price: 3 },
+    { product: 'mango', price: 6 },
+    { product: 'potato', price: ' ' },
+    { product: 'avocado', price: 8 },
+    { product: 'coffee', price: 10 },
+    { product: 'tea', price: '' },
+]
+
+var price = products.map(price => price.price)
+console.log(price);
+
+//Filter countries containing land
+const countriesContainingLand = countries.filter((country) =>
+    country.toLocaleLowerCase().includes('land'))
+
+console.log(countriesContainingLand)
+
+const countriesSix = countries.filter((country) =>
+    country.length < 7)
+console.log(countriesSix)
+
+// Below code doesn't work
+var priceVisible = products.filter((price) => price.includes(''))
+console.log(priceVisible);
+
+
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+var reduceSum = numbers.reduce((acc, cur) => acc + cur, 0)
+console.log(reduceSum);
+
+const firstCountriesSix = countries.find((country) =>
+    country.length < 7)
+console.log(firstCountriesSix)
+
+const norway = countries.findIndex((country) =>
+    country.toUpperCase().includes("norway"))
+console.log(norway)
