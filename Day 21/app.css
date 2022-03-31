@@ -1,0 +1,31 @@
+/* body {
+    background-color: bisque;
+} */
+.wrapper {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    justify-content: center;
+    padding: 10px;
+}
+
+ul {
+    padding: 10px;
+    margin-bottom: 2px;
+}
+
+/* .css {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    justify-content: center;
+    padding: 10px;
+} */
+
+/* li {
+    margin: 10px;
+} */
+
+span {
+    font-size: 3em;
+}
